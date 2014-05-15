@@ -125,6 +125,7 @@ namespace GameOfLife
 	    private void NextStepButton_OnTapped(object sender, TappedRoutedEventArgs e)
 	    {
 		    MainActions();
+			SoundEffectMediaElement.Play();
 	    }
 
 	    private async void StartButton_OnTapped(object sender, TappedRoutedEventArgs e)
@@ -135,6 +136,7 @@ namespace GameOfLife
 		    LoadStateButton.IsEnabled = _isLifeCycleRun;
 		    StartButton.Content = StartButton.Content.Equals("Start") ? "Stop" : "Start";
 		    _isLifeCycleRun = !_isLifeCycleRun;
+			SoundEffectMediaElement.Play();
 		    while (_isLifeCycleRun)
 		    {
 				MainActions();
@@ -152,7 +154,6 @@ namespace GameOfLife
 				Core.AddToListDeadPoints(App.ChangedPointsList);
 				Core.AddToListALivePoints(App.ChangedPointsList);
 				ViewChanges();
-				SoundEffectMediaElement.Play();
 			}
 	    }
 
@@ -173,6 +174,7 @@ namespace GameOfLife
 				}
 				App.ChangedPointsList.Clear();
 		    }
+			SoundEffectMediaElement.Play();
 	    }
 
 	    private void SaveStateButton_OnTapped(object sender, TappedRoutedEventArgs e)
@@ -185,6 +187,7 @@ namespace GameOfLife
 			    }
 				App.LocalSettings.Values["ChangedPointsList"] = _composite;
 		    }
+			SoundEffectMediaElement.Play();
 	    }
 
 	    private void LoadStateButton_OnTapped(object sender, TappedRoutedEventArgs e)
@@ -206,6 +209,7 @@ namespace GameOfLife
 					(MainCanvas.Children.First(x => (x as Rectangle).Name.Equals(item)) as Rectangle).Fill = _blackColor;
 				}
 			}
+			SoundEffectMediaElement.Play();
 	    }
     }
 }

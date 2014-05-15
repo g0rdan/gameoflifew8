@@ -20,7 +20,7 @@
             <Button x:Name="SaveStateButton" Content="Save State" Tapped="SaveStateButton_OnTapped"  Width="120" />
             <Button x:Name="LoadStateButton" Content="Load State" Tapped="LoadStateButton_OnTapped"  Width="120" />
         </StackPanel>
-        <MediaElement x:Name="SoundEffectMediaElement" AudioCategory="GameEffects" Source="Assets/Sounds/sound81.wav"/> 
+        <MediaElement x:Name="SoundEffectMediaElement" AudioCategory="GameEffects" Source="Assets/Sounds/sound81.wav" AutoPlay="False"/> 
     </Grid>
     
     
