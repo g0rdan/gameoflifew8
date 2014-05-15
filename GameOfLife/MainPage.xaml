@@ -1,0 +1,27 @@
+﻿<Page
+    x:Class="GameOfLife.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GameOfLife"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid x:Name="MainGrid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="200" />
+        </Grid.ColumnDefinitions>
+        <Canvas x:Name="MainCanvas" Width="700" Height="700" Grid.Column="0" Margin="10" VerticalAlignment="Center"  HorizontalAlignment="Center" />
+        <StackPanel Grid.Column="1" Margin="25" HorizontalAlignment="Right">
+            <Button x:Name="StartButton" Content="Start" Tapped="StartButton_OnTapped" Width="120" />
+            <Button x:Name="NextStepButton" Content="Next Step" Tapped="NextStepButton_OnTapped" Width="120" />
+            <Button x:Name="ClearButton" Content="Clear Area" Tapped="ClearButton_OnTapped" Width="120" />
+            <Button x:Name="SaveStateButton" Content="Save State" Tapped="SaveStateButton_OnTapped"  Width="120" />
+            <Button x:Name="LoadStateButton" Content="Load State" Tapped="LoadStateButton_OnTapped"  Width="120" />
+        </StackPanel>
+        <MediaElement x:Name="SoundEffectMediaElement" AudioCategory="GameEffects" Source="Assets/Sounds/sound81.wav"/> 
+    </Grid>
+    
+    
+</Page>
