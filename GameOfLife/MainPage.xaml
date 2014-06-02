@@ -13,9 +13,9 @@
             <ColumnDefinition Width="200" />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-        <Canvas x:Name="MainCanvas" Grid.Row="0" Grid.Column="0" Margin="10" VerticalAlignment="Center" />
+        <Canvas x:Name="MainCanvas" Width="900" Height="600" Grid.Row="0" Grid.Column="0" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" />
         <StackPanel Grid.Row="0" Grid.Column="1" Margin="10" HorizontalAlignment="Right">
             <Button x:Name="StartButton" Content="Start" Tapped="StartButton_OnTapped" Width="120" />
             <Button x:Name="NextStepButton" Content="Next Step" Tapped="NextStepButton_OnTapped" Width="120" />
