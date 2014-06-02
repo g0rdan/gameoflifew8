@@ -12,8 +12,11 @@
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="200" />
         </Grid.ColumnDefinitions>
-        <Canvas x:Name="MainCanvas" Width="700" Height="700" Grid.Column="0" Margin="10" VerticalAlignment="Center"  HorizontalAlignment="Center" />
-        <StackPanel Grid.Column="1" Margin="25" HorizontalAlignment="Right">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Canvas x:Name="MainCanvas" Grid.Row="0" Grid.Column="0" Margin="10" VerticalAlignment="Center" />
+        <StackPanel Grid.Row="0" Grid.Column="1" Margin="10" HorizontalAlignment="Right">
             <Button x:Name="StartButton" Content="Start" Tapped="StartButton_OnTapped" Width="120" />
             <Button x:Name="NextStepButton" Content="Next Step" Tapped="NextStepButton_OnTapped" Width="120" />
             <Button x:Name="ClearButton" Content="Clear Area" Tapped="ClearButton_OnTapped" Width="120" />

@@ -26,10 +26,10 @@ namespace GameOfLife
     {
 		private ApplicationDataCompositeValue _composite = new ApplicationDataCompositeValue();
 
-	    private const int UniverseWidth = 100;
-	    private const int UniverseHeight = 100;
-	    private const int RectangleWidth = 7;
-	    private const int RectangleHeight = 7;
+	    private const int UniverseWidth = 30;
+	    private const int UniverseHeight = 20;
+	    private const int RectangleWidth = 30;
+	    private const int RectangleHeight = 30;
 	    private const int DelayBetweenSteps = 100;
 
 		private readonly SolidColorBrush _whiteColor = new SolidColorBrush(Colors.White);

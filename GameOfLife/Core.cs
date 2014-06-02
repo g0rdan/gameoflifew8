@@ -8,7 +8,7 @@ namespace GameOfLife
 	class Core
 	{
 		/// <summary>
-		/// Добавляем в список клетки, которые мы в будущем добавим к живам клеткам
+		/// Добавляем в список клетки, которые мы в будущем добавим к живым клеткам
 		/// </summary>
 		/// <param name="changedPointsList">список живых клеток</param>
 		public static void AddToListALivePoints(List<string> changedPointsList)
